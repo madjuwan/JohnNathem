@@ -1,139 +1,151 @@
 <!doctype html>
-  <html>
-    <head>
-      <title> 명규는 짱규다 </title>
-      <meta charset="utl-8">
-      <style>
-      #active {
-        color:gold;
+<html>
+
+<head>
+  <title> 명규는 짱규다 </title>
+  <meta charset="utl-8">
+  <link rel="stylesheet" href="style.css">
+  <p>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132356085-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
       }
-      .saw {
-        color:gray;
-      }
-      a {
-        color:green;
-        text-decoration:none;
-      }
-      h2 {
-        font-size:45px;
-        text-align:center;
-      }
-      </style>
-      <p>
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132356085-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag('js', new Date());
 
-  gtag('config', 'UA-132356085-1');
-</script>
-        </p>
-    </head>
+      gtag('config', 'UA-132356085-1');
+    </script>
+  </p>
+</head>
 
-    <body>
-      <ol>
-        <h2>WEB1</h2>
-        <li><font color="blue">1. HTML</font></li>
-        <li class="saw" id="active">2. CSS</li>
-        <li class="saw">3. JavaScript</li>
-      </ol>
-      <ol>
-        <h1>
-        <li><a ref="" style="color:red; text-decoration:underline"> 명규</a></li>
-        <li><a ref=""> 꼬추</a></li>
-        </h1>
-      </ol>
-      <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0_wl8YLpm5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </p>
-      <p>
-        <div id="disqus_thread"></div>
-<script>
+<body>
+  <h2 id="title">WEB1</h2>
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  ">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  ">
+  <div id="division">
+    <ol id="left">
+      <li>
+        <font color="blue">1. HTML</font>
+      </li>
+      <li class="saw" id="active">2. CSS</li>
+      <li class="saw">3. JavaScript</li>
+      <input type="button" value="hi" onclick="alert('hi')">
+      <input type="text" onchange="alert('changed')">
+      <input type="text" onkeydown="alert('key down!')">
+      <script>
+        document.write(1 + 1);
+      </script>
+    </ol>
+    <ol>
+      <h1>
+        <li>명규</li>
+        <li>꼬추</li>
+      </h1>
+    </ol>
+  </div>
+  <p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0_wl8YLpm5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+  <p>
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://johnnathem.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+  <p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function() {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5c39f61e361b3372892fcc86/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </p>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://johnnathem.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      </p>
-      <p>
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5c39f61e361b3372892fcc86/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-        </p>
 
 
 
-
-<h3><a href="index.html"> WEB </a></h3>
+  <h3><a href="index.html"> WEB </a></h3>
   <ol>
     <li><a href="1.html">HTML</a>
     <li><a href="3.html">CSS</a>
     <li><a href="4.html">JavaScript</a>
-    <p>
-      https://www.bitballoon.com/
-      http://neocities.org/
-      Amazon S3
-      Google Cloud Storage
-      Azure Blob
-    </p>
-</ol>
-    </body>
+      <p>
+        https://www.bitballoon.com/
+        http://neocities.org/
+        Amazon S3
+        Google Cloud Storage
+        Azure Blob
+      </p>
+  </ol>
+</body>
 
 
 
-    <a href="https://www.w3.org/TR/html5/" target="_blank" title="명명백백">kyoo</a> kyoo kko choo asdf321asdf321asd3f21asd3f21asd32f1asd32f1asd32f1asd32f1asd32f1asd32f1as3d2f1saa3s2d1f3as2d1f3a2sd1f3a2sd1f3as2d1f32sad1f32sad1f32sad1f32sa1df32sa1df3sadfas1d3f2ad3f21asd321a3d2f13asd1f32as1f32a1d32f1as3d2f1
-    zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-    <!--
+<a href="https://www.w3.org/TR/html5/" target="_blank" title="명명백백">kyoo</a> kyoo kko choo
+asdf321asdf321asd3f21asd3f21asd32f1asd32f1asd32f1asd32f1asd32f1asd32f1as3d2f1saa3s2d1f3as2d1f3a2sd1f3a2sd1f3as2d1f32sad1f32sad1f32sad1f32sa1df32sa1df3sadfas1d3f2ad3f21asd321a3d2f13asd1f32as1f32a1d32f1as3d2f1
+zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+<!--
     cccccccccccc
     -->
-    <u>dddddddddddddd</u>
-    <strong>eee<u>eeee</u>eeeee</<strong>
-      김명규 명규명규
-      <h1 class="logo">
-        <a tabindex="2" accesskey="1" href="/">
-          <img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" />
-        </a>
-        <span class="alt-logo">W3C</span>
-      </h1>
+<u>dddddddddddddd</u>
+<strong>eee<u>eeee</u>eeeee</<strong>
+  김명규 명규명규
+  <h1 class="logo">
+    <a tabindex="2" accesskey="1" href="/">
+      <img src="/2008/site/images/logo-w3c-mobile-lg" width="90" height="53" alt="W3C" />
+    </a>
+    <span class="alt-logo">W3C</span>
+  </h1>
 
-      <h1>W3C</h1>
-      <h2>W3C</h2>
+  <h1>W3C</h1>
+  <h2>W3C</h2>
 
-      <h1>명규꼬추</h1>
-      <h2>명꼬</h2>
-      <h3>꼬꼬추규묭</h3>
+  <h1>명규꼬추</h1>
+  <h2>명꼬</h2>
+  <h3>꼬꼬추규묭</h3>
 
-      명규꼬추<br>명규<br><br>꼬추
-    <p style="margin-top:45px;">명규꼬추</p><p style="margin-top:45px;">명규</p><br>꼬추
+  명규꼬추<br>명규<br><br>꼬추
+  <p style="margin-top:45px;">명규꼬추</p>
+  <p style="margin-top:45px;">명규</p><br>꼬추
 
-    <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
-    <img src="C:\Users\TAEH\Desktop\9e06730fc2aa976cdef97ddaa7c54d080b8e9952[1].jpg">
-    <img src="22[1].png">
-    이미지는 unsplash.com
- </html>
+  <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+  <img src="C:\Users\TAEH\Desktop\9e06730fc2aa976cdef97ddaa7c54d080b8e9952[1].jpg">
+  <img src="22[1].png">
+  이미지는 unsplash.com
+
+</html>
